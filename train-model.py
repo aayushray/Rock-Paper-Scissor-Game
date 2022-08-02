@@ -16,7 +16,7 @@ classifier.add(Dense(units=4, activation='softmax'))
 
 classifier.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-
+ 
 from keras.preprocessing.image import ImageDataGenerator
 
 train_datagen = ImageDataGenerator(
