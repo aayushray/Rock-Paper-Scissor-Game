@@ -1,7 +1,7 @@
 from keras.models import load_model
 import cv2
 import numpy as np
-from random import choice
+from random import choice 
 
 game_moves = {
     0: "rock",
