@@ -41,7 +41,7 @@ while True:
     cv2.putText(frame, "NONE : "+str(count['none']), (900, 180), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (255,255,255), 1)
     
     cv2.rectangle(frame, (100, 100), (500, 500), (255, 255, 255), 2)
-    roi = frame[100:500, 100:500]
+    roi = frame[100:500, 100:500]  #Extracting this particular area 
     roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
     roi = cv2.adaptiveThreshold(roi, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 91, 1)
     roi = cv2.resize(roi, (64, 64)) 
